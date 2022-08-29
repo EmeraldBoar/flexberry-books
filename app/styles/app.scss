@@ -11,6 +11,7 @@ html {
 body {
   height: 100%;
   color: #3B4256;
+  background-color: #F4F7FB;
 }
 
 .footer {
@@ -26,10 +27,6 @@ body {
 
 /* Various styles
 -------------------------------------------------- */
-
-.ember-view {
-  height: 100%;
-}
 
 .navigation-main {
   flex: 1;
@@ -260,12 +257,6 @@ a.tag-link:hover {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
-.home-page {
-  height: 100%;
-  background-color: #F4F7FB;
-}
-
 /* card */
 .card {
   border: 1px solid rgba(0, 0, 0, 0.1);
