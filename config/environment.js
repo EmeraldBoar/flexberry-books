@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'flexberry-books',
     environment,
-    rootURL: '/',
+    rootURL: '/flexberry-books',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
