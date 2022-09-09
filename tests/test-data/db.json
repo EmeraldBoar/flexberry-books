@@ -1,0 +1,101 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "firstName": "Зиновий",
+      "lastName": "Бобров",
+      "patronymic": "Филиппович"
+    },
+    {
+      "id": 2,
+      "firstName": "Василий",
+      "lastName": "Агафонов",
+      "patronymic": "Алексеевич"
+    },
+    {
+      "id": 3,
+      "firstName": "Артем",
+      "lastName": "Романов",
+      "patronymic": "Наумович"
+    },
+    {
+      "id": 4,
+      "firstName": "Георгий",
+      "lastName": "Белозёров",
+      "patronymic": "Сергеевич"
+    },
+    {
+      "id": 5,
+      "firstName": "Степан",
+      "lastName": "Суханов",
+      "patronymic": "Иванович"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Сильмариллион",
+      "author": "Джон Роналд Руэл Толкин",
+      "pages": "590",
+      "image": "",
+      "tags": [
+        "фэнтези",
+        "суперкнига"
+      ],
+      "descrtiption": "https://www.litres.ru/dzhon-tolkin/silmarillion/",
+      "rating": "53"
+    },
+    {
+      "id": 2,
+      "title": "Грокаем алгоритмы",
+      "author": "Адитья Бхаргава",
+      "pages": "288",
+      "image": "",
+      "tags": [
+        "программирование",
+        "суперкнига"
+      ],
+      "descrtiption": "https://www.litres.ru/aditya-bhargava/grokaem-algoritmy-illustrirovannoe-posobie-dlya-p-39158380/otzivi/",
+      "rating": "79"
+    },
+    {
+      "id": 3,
+      "title": "Искусство программирования",
+      "author": "Дональд Кнут",
+      "pages": "722",
+      "image": "",
+      "tags": [
+        "программирование",
+        "бдсм"
+      ],
+      "descrtiption": "https://www.litres.ru/donald-e-knut/iskusstvo-programmirovaniya-tom-1-osnovnye-algoritm-38842138/",
+      "rating": "99"
+    },
+    {
+      "id": 4,
+      "title": "Выразительный JavaScript",
+      "author": "Марейн Хавербеке",
+      "pages": "480",
+      "image": "",
+      "tags": [
+        "javascript",
+        "программирование"
+      ],
+      "descrtiption": "https://www.litres.ru/mareyn-haverbeke/vyrazitelnyy-javascript-sovremennoe-veb-programm-50447564/",
+      "rating": "67"
+    },
+    {
+      "id": 5,
+      "title": "Возвращение короля",
+      "author": "Джон Роналд Руэл Толкин",
+      "pages": "510",
+      "image": "",
+      "tags": [
+        "суперкнига",
+        "фэнтези"
+      ],
+      "descrtiption": "https://www.litres.ru/dzhon-tolkin/silmarillion/chitat-onlayn/",
+      "rating": "25"
+    }
+  ]
+}
