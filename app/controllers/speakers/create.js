@@ -14,6 +14,10 @@ export default Controller.extend({
         patronymic: this.get('model.patronymic')
       });
       this.transitionToRoute('speakers');
+    },
+    cancel(evt) {
+      evt.preventDefault();
+      this.transitionToRoute('speakers');
     }
   }
 });
