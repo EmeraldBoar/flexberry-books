@@ -1,34 +1,34 @@
 {
-  "authors": [
+  "speakers": [
     {
       "id": 1,
-      "firstName": "Зиновий",
-      "lastName": "Бобров",
-      "patronymic": "Филиппович"
-    },
-    {
-      "id": 2,
-      "firstName": "Василий",
-      "lastName": "Агафонов",
-      "patronymic": "Алексеевич"
-    },
-    {
-      "id": 3,
       "firstName": "Артем",
       "lastName": "Романов",
       "patronymic": "Наумович"
     },
     {
-      "id": 4,
+      "id": 2,
       "firstName": "Георгий",
       "lastName": "Белозёров",
       "patronymic": "Сергеевич"
     },
     {
-      "id": 5,
-      "firstName": "Степан",
-      "lastName": "Суханов",
-      "patronymic": "Иванович"
+      "id": 3,
+      "firstName": "Олег",
+      "lastName": "Васильев",
+      "patronymic": "Сергеевич"
+    },
+    {
+      "firstName": "Алексей",
+      "lastName": "Гончаров",
+      "patronymic": "Васильевич",
+      "id": 4
+    },
+    {
+      "firstName": "Аркадий",
+      "lastName": "Дмитриенко",
+      "patronymic": "Борисович",
+      "id": 5
     }
   ],
   "books": [
