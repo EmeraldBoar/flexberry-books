@@ -8,7 +8,7 @@ export default Route.extend({
     set(controller, 'title', '');
     set(controller, 'author', '');
     set(controller, 'pages', '');
-    set(controller, 'descrtiption', '');
+    set(controller, 'description', '');
     set(controller, 'uploadData', null);
   }
 });

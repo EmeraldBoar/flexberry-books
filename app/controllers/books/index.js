@@ -14,7 +14,7 @@ export default Controller.extend({
       this.get('dataService').getBooks(this.get('search'), this.get('tags'));
     },
     deleteBookItem(book) {
-      this.get('dataService').deleteElement('books', book);
+      book.destroyRecord()
     }
   }
 });
