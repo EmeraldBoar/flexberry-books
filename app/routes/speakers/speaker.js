@@ -5,7 +5,7 @@ export default Route.extend({
   dataService: service('data'),
 
   model({id}) {
-    return this.get('dataService').getElement(id,'speakers');
+    return this.get('store').findRecord('speaker', id);
   }
 
 });

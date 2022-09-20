@@ -7,8 +7,8 @@ export default Controller.extend({
   queryParams: ['search'],
   search: '',
   actions: {
-    deleteSpeakerItem(speaker) {
-      this.get('dataService').deleteElement('speakers',speaker);
+    async deleteSpeakerItem(speaker) {
+      await speaker.destroyRecord()
     },
     searchSpeaker(evt) {
       evt.preventDefault();

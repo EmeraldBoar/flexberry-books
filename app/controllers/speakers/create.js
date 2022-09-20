@@ -8,11 +8,12 @@ export default Controller.extend({
   actions: {
     async saveSpeaker(evt) {
       evt.preventDefault();
-      await this.get('dataService').createSpeaker({
-        firstName: this.get('model.firstName'),
-        lastName: this.get('model.lastName'),
-        patronymic: this.get('model.patronymic')
+      const newSpeaker = this.get('store').createRecord('speaker', {
+        firstName: this.get('firstName'),
+        lastName: this.get('lastName'),
+        patronymic: this.get('patronymic')
       });
+      await newSpeaker.save();
       this.transitionToRoute('speakers');
     },
     cancel(evt) {

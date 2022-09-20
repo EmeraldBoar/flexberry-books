@@ -1,11 +1,13 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-  model() {
-    return {
+  setupController(controller) {
+    this._super(...arguments);
+
+    controller.setProperties({
       firstName: '',
       lastName: '',
-      patronymic: ''
-  }
+      patronymic: '',
+    })
   }
 });

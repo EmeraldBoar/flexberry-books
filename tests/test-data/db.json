@@ -10,7 +10,7 @@
       "id": 2,
       "firstName": "Георгий",
       "lastName": "Белозёров",
-      "patronymic": "Сергеевич"
+      "patronymic": "Алексеевич"
     },
     {
       "id": 3,
@@ -36,13 +36,13 @@
       "id": 1,
       "title": "Сильмариллион",
       "author": "Джон Роналд Руэл Толкин",
-      "pages": "590",
+      "pages": 590,
       "image": "",
       "tags": [
         "фэнтези",
         "суперкнига"
       ],
-      "descrtiption": "https://www.litres.ru/dzhon-tolkin/silmarillion/",
+      "description": "https://www.litres.ru/dzhon-tolkin/silmarillion/",
       "rating": "53"
     },
     {
@@ -55,7 +55,7 @@
         "программирование",
         "суперкнига"
       ],
-      "descrtiption": "https://www.litres.ru/aditya-bhargava/grokaem-algoritmy-illustrirovannoe-posobie-dlya-p-39158380/otzivi/",
+      "description": "https://www.litres.ru/aditya-bhargava/grokaem-algoritmy-illustrirovannoe-posobie-dlya-p-39158380/otzivi/",
       "rating": "79"
     },
     {
@@ -68,7 +68,7 @@
         "программирование",
         "бдсм"
       ],
-      "descrtiption": "https://www.litres.ru/donald-e-knut/iskusstvo-programmirovaniya-tom-1-osnovnye-algoritm-38842138/",
+      "description": "https://www.litres.ru/donald-e-knut/iskusstvo-programmirovaniya-tom-1-osnovnye-algoritm-38842138/",
       "rating": "99"
     },
     {
@@ -81,7 +81,7 @@
         "javascript",
         "программирование"
       ],
-      "descrtiption": "https://www.litres.ru/mareyn-haverbeke/vyrazitelnyy-javascript-sovremennoe-veb-programm-50447564/",
+      "description": "https://www.litres.ru/mareyn-haverbeke/vyrazitelnyy-javascript-sovremennoe-veb-programm-50447564/",
       "rating": "67"
     },
     {
@@ -94,7 +94,7 @@
         "суперкнига",
         "фэнтези"
       ],
-      "descrtiption": "https://www.litres.ru/dzhon-tolkin/silmarillion/chitat-onlayn/",
+      "description": "https://www.litres.ru/dzhon-tolkin/silmarillion/chitat-onlayn/",
       "rating": "25"
     }
   ]
