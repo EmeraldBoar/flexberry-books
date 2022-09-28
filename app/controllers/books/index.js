@@ -13,8 +13,9 @@ export default Controller.extend({
       evt.preventDefault();
       this.get('dataService').getBooks(this.get('search'), this.get('tags'));
     },
-    deleteBookItem(book) {
-      this.get('dataService').deleteElement('books', book);
+    async deleteBookItem(book) {
+      await book.destroyRecord();
+      this.get('store').unloadRecord(book);
     }
   }
 });

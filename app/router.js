@@ -10,20 +10,19 @@ Router.map(function() {
   this.route('404', { path: '*path' });
 
   this.route('speakers', function() {
-    this.route('speaker', { path: ':id'}, function() {
-      this.route('edit');
-    });
+    this.route('edit', { path: ':id/edit'});
     this.route('create');
   });
 
   this.route('books', function() {
-    this.route('book', { path: ':id'}, function() {
-      this.route('edit');
-    });
+    this.route('edit', { path: ':id/edit'});
     this.route('create');
   });
 
-  this.route('meetings');
+  this.route('meetings', function() {
+    this.route('edit', { path: ':id/edit'});
+    this.route('create');
+  });
 });
 
 export default Router;

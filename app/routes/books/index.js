@@ -10,6 +10,7 @@ export default Route.extend({
 
 
   model({search, tags}) {
-    return this.get('dataService').getBooks(search, tags);
+    // return this.get('dataService').getBooks(search, tags);
+    return this.get('store').findAll('book');
   }
 });
