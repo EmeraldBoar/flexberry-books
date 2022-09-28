@@ -7,5 +7,6 @@ export default DS.Model.extend({
   image: DS.attr('string'),
   tags: DS.attr(),
   description: DS.attr('string'),
-  rating: DS.attr('string')
+  rating: DS.attr('string'),
+  reports: DS.hasMany('report')
 });
