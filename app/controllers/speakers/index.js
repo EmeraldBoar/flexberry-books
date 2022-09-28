@@ -8,7 +8,8 @@ export default Controller.extend({
   search: '',
   actions: {
     async deleteSpeakerItem(speaker) {
-      await speaker.destroyRecord()
+      await speaker.destroyRecord();
+      this.get('store').unloadRecord(speaker);
     },
     searchSpeaker(evt) {
       evt.preventDefault();
