@@ -1,4 +1,64 @@
 {
+  "meetings": [
+    {
+      "id": 1,
+      "date": "Fri Sep 16 2022 15:48:59 GMT+0300"
+    },
+    {
+      "id": 2,
+      "date": "Fri Sep 17 2022 15:48:59 GMT+0300"
+    }
+  ],
+  "reports": [
+    {
+      "id": 1,
+      "speaker": "Романов Артем",
+      "book": "Сильмариллион",
+      "presentationURL": "https://docs.google.com/document/d/1zUDCDDVwdV1_pJNwrIOEuBwYrYUacDWbeIOWs2Qlj6o",
+      "videoURL": "https://www.youtube.com/watch?v=wf91JGdCqHM&ab_channel=ReadersClub",
+      "review": "Таким образом, существующая теория однозначно определяет каждого участника как способного принимать собственные решения касаемо новых предложений.",
+      "rating": "50",
+      "meetingId": 2,
+      "bookId": 1,
+      "speakerId": 1
+    },
+    {
+      "id": 2,
+      "speaker": "Белозёров Георгий",
+      "book": "Грокаем алгоритмы",
+      "presentationURL": "https://docs.google.com/document/d/1zUDCDDVwdV1_pJNwrIOEuBwYrYUacDWbeIOWs2Qlj6o",
+      "videoURL": "https://www.youtube.com/watch?v=wf91JGdCqHM&ab_channel=ReadersClub",
+      "review": "Равным образом, глубокий уровень погружения играет важную роль в формировании новых принципов формирования материально-технической и кадровой базы!",
+      "rating": "40",
+      "meetingId": 2,
+      "bookId": 2,
+      "speakerId": 2
+    },
+    {
+      "id": 3,
+      "speaker": "Гончаров Алексей",
+      "book": "Искусство программирования",
+      "presentationURL": "https://docs.google.com/document/d/1zUDCDDVwdV1_pJNwrIOEuBwYrYUacDWbeIOWs2Qlj6o",
+      "videoURL": "https://www.youtube.com/watch?v=wf91JGdCqHM&ab_channel=ReadersClub",
+      "review": "Таким образом, сплочённость команды профессионалов требует определения и уточнения направлений прогрессивного развития.",
+      "rating": "83",
+      "meetingId": 1,
+      "bookId": 3,
+      "speakerId": 4
+    },
+    {
+      "id": 4,
+      "speaker": "Дмитриенко Аркадий",
+      "book": "Возвращение короля",
+      "presentationURL": "https://docs.google.com/document/d/1zUDCDDVwdV1_pJNwrIOEuBwYrYUacDWbeIOWs2Qlj6o",
+      "videoURL": "https://www.youtube.com/watch?v=wf91JGdCqHM&ab_channel=ReadersClub",
+      "review": "Таким образом, существующая теория однозначно определяет каждого участника как способного принимать собственные решения касаемо новых предложений.",
+      "rating": "64",
+      "meetingId": 1,
+      "bookId": 5,
+      "speakerId": 5
+    }
+  ],
   "speakers": [
     {
       "id": 1,

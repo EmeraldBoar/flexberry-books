@@ -5,9 +5,4 @@ export default ApplicationSerializer.extend({
     hash = this._super(...arguments);
     return hash;
   }
-  // serialize(snapshot) {
-  //   const json = this._super(...arguments);
-  //   json.type = snapshot.modelName;
-  //   return json;
-  // }
 });
