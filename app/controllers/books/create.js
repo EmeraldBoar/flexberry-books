@@ -12,15 +12,8 @@ export default Controller.extend({
 
     async saveBook(evt) {
       evt.preventDefault();
-      // const uploadData = this.get('uploadData');
-      // await this.get('dataService').createBook({
-      //   rating: '0',
-      //   title: this.get('title'),
-      //   author: this.get('author'),
-      //   pages: this.get('pages'),
-      //   descrtiption: this.get('descrtiption'),
-      //   tags: this.get('tags'),
-      // }, uploadData)
+
+      const uploadData = this.get('uploadData');
 
       const newBook = this.get('store').createRecord('book', {
         rating: '0',
@@ -29,8 +22,14 @@ export default Controller.extend({
         pages: this.get('pages'),
         description: this.get('description'),
         tags: this.get('tags'),
+        coverURL: this.get("coverUrl")
       });
-      await newBook.save();
+      const book = await newBook.save();
+
+      if (uploadData) {
+        await this.get("dataService").createBookCover(Number(book.id), uploadData);
+      }
+
       this.transitionToRoute('books');
     },
 

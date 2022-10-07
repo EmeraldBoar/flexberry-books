@@ -9,13 +9,21 @@ export default Controller.extend({
   tags: '',
 
   actions: {
-    searchBooks(evt) {
+    async searchBooks(evt) {
       evt.preventDefault();
-      this.get('dataService').getBooks(this.get('search'), this.get('tags'));
+      const currentBooks = this.get('search') || this.get('tags')
+        ? await this.get('store').query('book', { q: this.get('search'), tags_like: this.get('tags')})
+        : await this.get('store').findAll('book');
+      this.set('model', currentBooks);
     },
     async deleteBookItem(book) {
       await book.destroyRecord();
       this.get('store').unloadRecord(book);
     }
+  },
+
+  reset() {
+    this.set('search', '');
+    this.set('tags', '');
   }
 });

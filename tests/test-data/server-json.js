@@ -81,11 +81,54 @@ function responseInterceptor(req, res, next) {
 
 server.use(responseInterceptor);
 
+server.use((request, response, next) => {
+  const book = Number(request.query.book);
+  const speaker = Number(request.query.speaker);
+  const date = request.query.date;
+  const page = Number(request.query._page);
+  const limit = Number(request.query._limit);
+
+  if (request.method === 'GET' && request.path === '/meetings') {
+    const meetings = router.db.get('meetings')
+      .filter((meeting) => date ? meeting.date === date : true)
+      .reduce((acc, meeting) => {
+
+        const meetingReports = router.db.get('reports')
+          .filter((report) => report.meetingId === meeting.id).value();
+        const filterReports = router.db.get('reports')
+          .filter((report) => report.meetingId === meeting.id)
+          .filter((report) => speaker ? report.speakerId === speaker : true)
+          .filter((report) => book ? report.bookId === book : true)
+          .value();
+
+          if (filterReports.length > 0) {
+            acc.push(
+              {
+                id: meeting.id,
+                date: meeting.date,
+                reports: meetingReports
+              }
+             );
+          }
+
+          return acc;
+      },[])
+      .value();
+
+    response.setHeader(
+      "X-Total-Count",
+      `${meetings.length}`
+    );
+    response.append("Access-Control-Expose-Headers", "X-Total-Count");
+    response.json(meetings.slice((page - 1) * limit, page * limit));
+  } else {
+    next();
+  }
+});
+
 
 server.post("/FileUpload", upload.any(), function (req, res) {
-
   let filedata = req.files;
-
   if (!filedata) {
     res.status(500).json(getError('File upload', 'Error during file upload', 500, null));
   }

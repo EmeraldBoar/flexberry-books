@@ -5,4 +5,9 @@ export default Component.extend({
   //   this._super(...arguments);
   //   console.log(this.get('report'));
   // }
+  actions: {
+    deleteMeeting() {
+      this.onClick(this.get('meeting'));
+    }
+  }
 });

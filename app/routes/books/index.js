@@ -10,7 +10,12 @@ export default Route.extend({
 
 
   model({search, tags}) {
-    // return this.get('dataService').getBooks(search, tags);
-    return this.get('store').findAll('book');
+    return (search || tags)
+      ? this.get('store').query('book', { q: search, tags_like: tags ? tags : '' })
+      : this.get('store').findAll('book');
+  },
+
+  resetController(controller) {
+    controller.reset();
   }
 });
