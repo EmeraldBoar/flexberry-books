@@ -24,6 +24,21 @@ body {
 
 /* Various styles
 -------------------------------------------------- */
+.page-link--active {
+  z-index: 3;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.page-link--active:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  cursor: auto;
+}
+
+
 
 .navigation-main {
   flex: 1;
@@ -80,6 +95,22 @@ a.tag-link:hover {
 
 .search {
   width: 250px;
+}
+
+
+.ember-power-select-trigger {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 3px;
+}
+
+.ember-power-select-selected-item,
+.ember-power-select-placeholder {
+  margin-left: 0.75rem;
+}
+
+.ember-power-select-selected-item {
+  color: #495057;
 }
 
 .edit-form {

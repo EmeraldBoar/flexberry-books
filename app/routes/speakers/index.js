@@ -8,7 +8,10 @@ export default Route.extend({
   },
 
   model({ search }) {
-    // return search ? this.get('dataService').getSpeakers(search) : this.get('dataService').getSpeakers();
-    return this.get('store').findAll('speaker');
+    return search ? this.get('store').query('speaker', { q: search }) : this.get('store').findAll('speaker');
+  },
+
+  resetController(controller) {
+    controller.reset();
   }
 });

@@ -1,3 +1,9 @@
 
 @import "ember-bootstrap/bootstrap";
+$ember-power-select-border-color: #ced4da !default;
+$ember-power-select-placeholder-color: #6c757d !default;
+@import 'ember-power-select/themes/bootstrap';
+@import "ember-power-select";
 @import "./styles.scss";
+
+

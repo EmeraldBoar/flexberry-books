@@ -11,9 +11,16 @@ export default Controller.extend({
       await speaker.destroyRecord();
       this.get('store').unloadRecord(speaker);
     },
-    searchSpeaker(evt) {
+    async searchSpeaker(evt) {
       evt.preventDefault();
-      this.get('dataService').getSpeakers(this.get('search'));
-    }
+      const currentSpeakers = this.get('search')
+        ? await this.get('store').query('speaker', { q: this.get('search') })
+        : await this.get('store').findAll('speaker');
+      this.set('model', currentSpeakers);
+    },
+
+  },
+  reset() {
+    this.set('search', '');
   }
 });
