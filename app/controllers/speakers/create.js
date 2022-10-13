@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 export default Controller.extend({
 
   dataService: service('data'),
+  currentUser: service(),
 
   actions: {
     async saveSpeaker(evt) {
@@ -11,7 +12,8 @@ export default Controller.extend({
       const newSpeaker = this.get('store').createRecord('speaker', {
         firstName: this.get('firstName'),
         lastName: this.get('lastName'),
-        patronymic: this.get('patronymic')
+        patronymic: this.get('patronymic'),
+        user: this.get('currentUser.user')
       });
       await newSpeaker.save();
       this.transitionToRoute('speakers');

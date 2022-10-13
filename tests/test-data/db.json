@@ -2,56 +2,68 @@
   "meetings": [
     {
       "id": 1,
+      "user": 2,
       "date": "2022-09-16T21:00:00.000Z"
     },
     {
       "id": 2,
+      "user": 2,
       "date": "2022-09-17T21:00:00.000Z"
     },
     {
       "id": 3,
+      "user": 2,
       "date": "2022-09-17T21:00:00.000Z"
     },
     {
       "id": 4,
+      "user": 2,
       "date": "2022-09-17T21:00:00.000Z"
     },
     {
       "id": 5,
+      "user": 2,
       "date": "2022-09-17T21:00:00.000Z"
     },
     {
       "id": 6,
+      "user": 1,
       "date": "2022-09-17T21:00:00.000Z"
     },
     {
       "id": 7,
+      "user": 1,
       "date": "2022-09-19T21:00:00.000Z"
     },
     {
       "date": "2022-10-13T21:00:00.000Z",
+      "user": 1,
       "id": 8
     },
     {
       "date": "2022-10-12T21:00:00.000Z",
+      "user": 1,
       "id": 9
     },
     {
       "date": "2022-10-14T21:00:00.000Z",
+      "userId": 1,
       "id": 10
     },
     {
       "date": "2022-10-27T21:00:00.000Z",
+      "userId": 1,
       "id": 11
     },
     {
-      "date": "2022-10-07T21:00:00.000Z",
-      "id": 13
+      "date": null,
+      "id": 12
     }
   ],
   "reports": [
     {
       "id": 1,
+      "userId": 2,
       "speaker": "Романов Артем",
       "book": "Сильмариллион",
       "presentationURL": "https://docs.google.com/document/d/1zUDCDDVwdV1_pJNwrIOEuBwYrYUacDWbeIOWs2Qlj6o",
@@ -64,6 +76,7 @@
     },
     {
       "id": 2,
+      "userId": 1,
       "speaker": "Белозёров Георгий",
       "book": "Грокаем алгоритмы",
       "presentationURL": "https://docs.google.com/document/d/1zUDCDDVwdV1_pJNwrIOEuBwYrYUacDWbeIOWs2Qlj6o",
@@ -76,6 +89,7 @@
     },
     {
       "id": 3,
+      "userId": 1,
       "speaker": "Гончаров Алексей",
       "book": "Искусство программирования",
       "presentationURL": "https://docs.google.com/document/d/1zUDCDDVwdV1_pJNwrIOEuBwYrYUacDWbeIOWs2Qlj6o",
@@ -94,6 +108,7 @@
       "meetingId": 1,
       "bookId": 4,
       "speakerId": 3,
+      "userId": 2,
       "id": 4
     },
     {
@@ -106,7 +121,8 @@
       "rating": 5,
       "meetingId": 3,
       "bookId": 3,
-      "speakerId": 4
+      "speakerId": 4,
+      "userId": 1
     },
     {
       "presentationURL": "http://ya.ru",
@@ -116,6 +132,7 @@
       "meetingId": 3,
       "bookId": 4,
       "speakerId": 4,
+      "userId": 2,
       "id": 6
     },
     {
@@ -126,6 +143,7 @@
       "meetingId": 4,
       "bookId": 4,
       "speakerId": 3,
+      "userId": 1,
       "id": 7
     },
     {
@@ -136,6 +154,7 @@
       "meetingId": 5,
       "bookId": 3,
       "speakerId": 5,
+      "userId": 2,
       "id": 8
     },
     {
@@ -146,6 +165,7 @@
       "meetingId": 5,
       "bookId": 2,
       "speakerId": 3,
+      "userId": 1,
       "id": 9
     },
     {
@@ -156,6 +176,7 @@
       "meetingId": 6,
       "bookId": 3,
       "speakerId": 5,
+      "userId": 2,
       "id": 10
     },
     {
@@ -166,6 +187,7 @@
       "meetingId": 7,
       "bookId": 4,
       "speakerId": 3,
+      "userId": 2,
       "id": 11
     },
     {
@@ -176,6 +198,7 @@
       "meetingId": 7,
       "bookId": 3,
       "speakerId": 1,
+      "userId": 1,
       "id": 12
     },
     {
@@ -186,6 +209,7 @@
       "meetingId": 8,
       "bookId": 3,
       "speakerId": 3,
+      "userId": 2,
       "id": 13
     },
     {
@@ -196,6 +220,7 @@
       "meetingId": 9,
       "bookId": 4,
       "speakerId": 3,
+      "userId": 1,
       "id": 14
     },
     {
@@ -206,6 +231,7 @@
       "meetingId": 10,
       "bookId": 2,
       "speakerId": 2,
+      "userId": 1,
       "id": 15
     },
     {
@@ -216,24 +242,28 @@
       "meetingId": 11,
       "bookId": 5,
       "speakerId": 2,
+      "userId": 2,
       "id": 16
     }
   ],
   "speakers": [
     {
       "id": 1,
+      "userId": 2,
       "firstName": "Артем",
       "lastName": "Романов",
       "patronymic": "Наумович"
     },
     {
       "id": 2,
+      "userId": 1,
       "firstName": "Георгий",
       "lastName": "Белозёров",
       "patronymic": "Алексеевич"
     },
     {
       "id": 3,
+      "userId": 2,
       "firstName": "Олег",
       "lastName": "Васильев",
       "patronymic": "Сергеевич"
@@ -242,24 +272,28 @@
       "firstName": "Алексей",
       "lastName": "Гончаров",
       "patronymic": "Васильевич",
-      "id": 4
+      "id": 4,
+      "userId": 2
     },
     {
       "firstName": "Аркадий",
       "lastName": "Дмитриенко",
       "patronymic": "Борисович",
+      "userId": 2,
       "id": 5
     },
     {
       "firstName": "Иван",
       "lastName": "Агафонов",
       "patronymic": "Александрович",
+      "userId": 1,
       "id": 6
     }
   ],
   "books": [
     {
       "id": 1,
+      "userId": 1,
       "title": "Сильмариллион",
       "author": "Джон Роналд Руэл Толкин",
       "pages": 590,
@@ -274,6 +308,7 @@
     },
     {
       "id": 2,
+      "userId": 1,
       "title": "Грокаем алгоритмы",
       "author": "Адитья Бхаргава",
       "pages": "288",
@@ -287,6 +322,7 @@
     },
     {
       "id": 3,
+      "userId": 2,
       "title": "Искусство программирования",
       "author": "Дональд Кнут",
       "pages": "722",
@@ -300,6 +336,7 @@
     },
     {
       "id": 4,
+      "userId": 2,
       "title": "Выразительный JavaScript",
       "author": "Марейн Хавербеке",
       "pages": "480",
@@ -313,6 +350,7 @@
     },
     {
       "id": 5,
+      "userId": 1,
       "title": "Возвращение короля",
       "author": "Джон Роналд Руэл Толкин",
       "pages": "510",
@@ -323,6 +361,22 @@
       ],
       "description": "https://www.litres.ru/dzhon-tolkin/silmarillion/chitat-onlayn/",
       "rating": "25"
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "email": "admin@admin",
+      "password": "3c1efb017ea632c6ff5fab2bf62cdcd8c5cf667bdcdc5b25b4c44e16770f1064",
+      "id": 1,
+      "isAdmin": true
+    },
+    {
+      "username": "kozlovkv174",
+      "email": "kozlovkv174@gmail.com",
+      "password": "3c1efb017ea632c6ff5fab2bf62cdcd8c5cf667bdcdc5b25b4c44e16770f1064",
+      "isAdmin": false,
+      "id": 2
     }
   ]
 }

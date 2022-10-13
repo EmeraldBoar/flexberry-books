@@ -5,6 +5,7 @@ import { inject as service } from '@ember/service';
 
 export default Controller.extend({
   dataService: service('data'),
+  currentUser: service(),
   actions: {
     changeTags(newTags) {
       set(this, 'tags', [...newTags]);
@@ -22,7 +23,8 @@ export default Controller.extend({
         pages: this.get('pages'),
         description: this.get('description'),
         tags: this.get('tags'),
-        coverURL: this.get("coverUrl")
+        coverURL: this.get("coverUrl"),
+        user: this.get('currentUser.user')
       });
       const book = await newBook.save();
 

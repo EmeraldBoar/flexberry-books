@@ -5,6 +5,7 @@ export default DS.Model.extend({
   videoURL: DS.attr('string'),
   review: DS.attr('string'),
   rating: DS.attr('number'),
+  user: DS.belongsTo('user'),
 
   meeting: DS.belongsTo('meeting'),
   book: DS.belongsTo('book'),

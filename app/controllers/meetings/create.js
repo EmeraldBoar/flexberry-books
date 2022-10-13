@@ -1,8 +1,10 @@
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 import { set } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
+  currentUser: service(),
   isDateSelected: computed('model.date', function() {
     return Boolean(this.get('model.date'));
   }),
@@ -16,12 +18,14 @@ export default Controller.extend({
       evt.preventDefault();
       const meetingModel = this.get('model');
       set(meetingModel, 'date', this.get('model.date'))
+      set(meetingModel, 'user', this.get('currentUser.user'))
       await meetingModel.save()
       this.transitionToRoute('meetings');
     },
     async addDate(){
       const meetingModel = this.get('model');
       set(meetingModel, 'date', this.get('model.date'))
+      set(meetingModel, 'user', this.get('currentUser.user'))
       await meetingModel.save()
     },
 

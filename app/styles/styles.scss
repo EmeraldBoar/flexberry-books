@@ -156,6 +156,25 @@ a.tag-link:hover {
 .btn-video {
   color: #62B0FF;
 }
+
+.errors {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.errors__item {
+  display: flex;
+  color: red;
+}
+
+.form-floating--margin {
+  margin-bottom: 10px;
+}
+
+.user-nav-text {
+  display: block;
+  padding: 0.5rem 1rem;
+}
 /* Bootstrap file styles
 -------------------------------------------------- */
 

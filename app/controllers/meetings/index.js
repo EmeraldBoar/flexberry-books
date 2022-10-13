@@ -8,6 +8,7 @@ export const PER_PAGE = 2;
 
 export default Controller.extend({
   moment: service(),
+  session: service(),
   queryParams: ['speaker', 'book', 'date', 'page'],
   speaker: '',
   book: '',

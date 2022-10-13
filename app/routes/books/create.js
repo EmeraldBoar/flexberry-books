@@ -1,7 +1,9 @@
 import Route from '@ember/routing/route';
 import { set } from '@ember/object';
+import ApplicationRouteMixin from "ember-simple-auth/mixins/application-route-mixin";
 
-export default Route.extend({
+
+export default Route.extend(ApplicationRouteMixin, {
   setupController(controller) {
     this._super(...arguments);
     set(controller, 'tags', []);

@@ -36,12 +36,25 @@
       </li>
     </ul>
     <ul class="nav navbar-nav">
+      {{#if session.isAuthenticated}}
+        <li class="nav-item">
+          <span class="user-nav-text">Привет, <span class="text-info">{{currentUser.user.username}}</span></span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" type="button" onclick={{action "logout"}}>Выйти</a>
+        </li>
+      {{else}}
       <li class="nav-item">
-        <a class="nav-link text-info" href="register.html">Регистрация</a>
+        {{#link-to "register" class="nav-link text-info"}}
+          Регистрация
+        {{/link-to}}
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login.html">Войти</a>
+        {{#link-to "login" class="nav-link"}}
+          Войти
+        {{/link-to}}
       </li>
+      {{/if}}
     </ul>
   </div>
 </nav>

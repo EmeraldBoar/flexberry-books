@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 
 export default Controller.extend({
   dataService: service('data'),
+  session: service(),
   queryParams: ['search', 'tags'],
   search: '',
   tags: '',

@@ -27,6 +27,8 @@ Router.map(function() {
     this.route('report-meeting-create', { path: ':id/report-meeting/create' });
     this.route('report-meeting-edit', { path: '/report-meeting/:report_id/edit' });
   });
+  this.route('register');
+  this.route('login');
 });
 
 export default Router;
